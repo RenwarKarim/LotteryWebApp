@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">Lottery Web Application
+</h1>
+<h2 class="subtitle">
+  CSC2031 Security & Programming Paradigms
+</h2>
+
+{% if current_user.is_authenticated %}
+<p>{{ full_name }}, Student Number: {{ student_id }}</p>
+{% endif %}
+{% endblock %}
